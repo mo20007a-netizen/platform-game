@@ -1,9 +1,56 @@
 herebody {
     margin: 0;
-    overflow: hidden; /* لمنع التمرير */
-    background-color: #87CEEB; /* لون السماء */
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(#87CEEB, #E0F6FF); /* لون السماء */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 canvas {
     display: block;
+}
+
+/* حاوية الأزرار */
+#ui-controls {
+    position: fixed;
+    bottom: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    box-sizing: border-box;
+    pointer-events: none; /* للسماح بالضغط من خلال الحاوية */
+}
+
+.movement-btns {
+    display: flex;
+    gap: 20px;
+}
+
+.control-btn {
+    width: 75px;
+    height: 75px;
+    background: rgba(255, 255, 255, 0.3);
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    pointer-events: auto;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 0.1s, background 0.1s;
+}
+
+.control-btn:active {
+    background: rgba(255, 255, 255, 0.7);
+    transform: scale(0.9);
+}
+
+.jump {
+    background: rgba(255, 69, 0, 0.4); /* زر القفز بلون مميز */
+    border-color: rgba(255, 69, 0, 0.6);
 }
