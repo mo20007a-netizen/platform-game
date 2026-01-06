@@ -1,64 +1,9 @@
-* { box-sizing: border-box; }
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: #bfe9ff;
-  min-height: 100vh;
+herebody {
+    margin: 0;
+    overflow: hidden; /* لمنع التمرير */
+    background-color: #87CEEB; /* لون السماء */
 }
 
-/* منطقة اللعبة */
-#game {
-  position: relative;
-  width: 800px;
-  max-width: 100%;
-  height: 350px;
-  background: url("https://i.ibb.co/qLSJQthK/Whisk-0000c03m6pt75.jpg") no-repeat center;
-  background-size: cover;
-  border: 4px solid #222;
-  overflow: hidden;
-  margin-top: 10px;
-  outline: none;
-  touch-action: none; 
+canvas {
+    display: block;
 }
-
-/* اللاعب */
-#player {
-  position: absolute;
-  width: 50px;
-  height: 65px;
-  background: url("https://i.ibb.co/mrqN0vHd/Whisk-0000q25c35di5.png") no-repeat center;
-  background-size: contain;
-  left: 50px;
-  bottom: 50px;
-}
-
-/* المنصات */
-.platform {
-  position: absolute;
-  height: 15px;
-  background: #5a3a1a;
-  border-radius: 3px;
-}
-
-/* العملات */
-.coin {
-  position: absolute;
-  width: 22px;
-  height: 22px;
-  background: gold;
-  border-radius: 50%;
-  box-shadow: 0 0 6px rgba(255,220,0,0.8);
-}
-
-/* الواجهة */
-#ui {
-  margin-top: 8px;
-  font-size: 18px;
-  text-align: center;
-  width: 800px;
-  max-width: 100%;
-}
-#status { margin-left: 12px; color: red; font-weight: bold; }
