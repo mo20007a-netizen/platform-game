@@ -1,32 +1,12 @@
-<!DOCTYPE html>
+here<!DOCTYPE html>
 <html lang="ar">
 <head>
-  <meta charset="utf-8" />
-  <title>Platform Game</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <title>لعبة شبيهة بماريو</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="game" tabindex="0" aria-label="Game area">
-    <div id="player"></div>
-
-    <!-- منصات -->
-    <div class="platform" data-x="0"   data-y="0"   data-w="800"></div>
-    <div class="platform" data-x="150" data-y="90"  data-w="160"></div>
-    <div class="platform" data-x="380" data-y="160" data-w="160"></div>
-    <div class="platform" data-x="600" data-y="230" data-w="160"></div>
-
-    <!-- عملات -->
-    <div class="coin" data-x="190" data-y="120"></div>
-    <div class="coin" data-x="420" data-y="190"></div>
-    <div class="coin" data-x="640" data-y="260"></div>
-  </div>
-
-  <div id="ui">
-    <span id="score">Score: 0</span>
-    <span id="status"></span>
-  </div>
-
-  <script src="script.js"></script>
+    <canvas id="gameCanvas"></canvas>
+    <script src="script.js"></script>
 </body>
 </html>
